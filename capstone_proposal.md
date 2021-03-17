@@ -24,11 +24,11 @@ In this project, the issue of identifying whether a tweet is announcing a disast
 
 The dataset to be used for this project contains alreeady split train and test datasets of 7503 & 3243 unique values repectively. The train dataset contains 4 inputs and one output. Since this dataset is a [kaggle competion](https://www.kaggle.com/c/nlp-getting-started/data), no output field is included in the test dataset. The inputs and output are defined below.
 
-_id_: a unique identifier for each tweet.
-_text_: text of each tweet.
-_location_: where the tweet was sent from.
-_keyword_: a particular keyword from the tweet.
-_target_: the output that denotes if a tweet is about real disaster(1) or not (0)
+* _id_: a unique identifier for each tweet.
+* _text_: text of each tweet.
+* _location_: where the tweet was sent from.
+* _keyword_: a particular keyword from the tweet.
+* _target_: the output that denotes if a tweet is about real disaster(1) or not (0)
 
 The datasets are collected from kaggle and was created by the company [figure-eight](https://www.figure-eight.com/data-for-everyone/). The inputs id, text and output will be used for building the model. For visualization, all the inputs and output will be applied accordingly.  
 
@@ -54,9 +54,9 @@ The accuracy can be calculated by
 
 The AUC is determined by plotting the values of true positive rate (TPR), true negative rate (TNR) and false positive rate (FPR). They are calculated thus.
 
-_TPR_ = TP / FN + TP
-_TNR_ = TN / TN + FP
-_FPR_ = FP / TN + FP
+* _TPR_ = TP / FN + TP
+* _TNR_ = TN / TN + FP
+* _FPR_ = FP / TN + FP
 
 Where TP is true positives, FN is false negatives, TN is true negatives and FP is false positives. 
 All these are derived from the predictions and will determine if the model will rank a randomly chosen positive value higher than a randomly chosen negative value.  
@@ -66,12 +66,12 @@ All these are derived from the predictions and will determine if the model will 
 
 The design of this project follows the steps listed below and explained briefly afterward.
 
-_Collection / downloading of data_
-_Cleaning and preparing of data_
-_Visual analysis of data_
-_Preprocessing data for modelling_
-_Modelling processed data_
-_Testing and Evaluation of results_
+1. _Collection / downloading of data_
+2. _Cleaning and preparing of data_
+3. _Visual analysis of data_
+4. _Preprocessing data for modelling_
+5. _Modelling processed data_
+6. _Testing and Evaluation of results_
 
 
 **Collection / downloading of data**
